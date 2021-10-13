@@ -1,0 +1,47 @@
+#include <math.h>
+#include <stdio.h>
+
+int main() {
+	char ch;
+	float n1, n2, result = 0;
+	int fact = 1;
+
+	printf("\n Please Enter an Operator (+, -, *, /)  :  ");
+	scanf("%c", &ch);
+
+	switch (ch) {
+	case '+':
+		printf("\n Please Enter the Values for two Operands: n1 and n2  :  ");
+		scanf("%f%f", &n1, &n2);
+		result = n1 + n2;
+		printf("\n %.2f + %.2f=%.2f", n1, n2, result);
+		break;
+
+	case '-':
+		printf("\n Please Enter the Values for two Operands: n1 and n2  :  ");
+		scanf("%f%f", &n1, &n2);
+		result = n1 - n2;
+		printf("\n %.2f -%.2f =%.2f", n1, n2, result);
+		break;
+
+	case '*':
+		printf("\n Please Enter the Values for two Operands: n1 and n2  :  ");
+		scanf("%f%f", &n1, &n2);
+		result = n1 * n2;
+		printf("\n %.2f* %.2f=%.2f", n1, n2, result);
+		break;
+
+	case '/':
+		printf("\n Please Enter the Values for two Operands: n1 and n2  :  ");
+		scanf("%f%f", &n1, &n2);
+		result = n1 / n2;
+		printf("\n %.2f / %.2f=%.2f", n1, n2, result);
+		break;
+
+	  default:
+		printf("\n Invalid Operator ");
+		break;
+	}
+
+	return 0;
+}
